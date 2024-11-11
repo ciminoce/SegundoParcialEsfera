@@ -50,6 +50,7 @@
             tsbSalir = new ToolStripButton();
             colRadio = new DataGridViewTextBoxColumn();
             colDensidad = new DataGridViewTextBoxColumn();
+            colArea = new DataGridViewTextBoxColumn();
             colVolumen = new DataGridViewTextBoxColumn();
             colMasa = new DataGridViewTextBoxColumn();
             colTipo = new DataGridViewTextBoxColumn();
@@ -74,7 +75,7 @@
             dgvDatos.AllowUserToAddRows = false;
             dgvDatos.AllowUserToDeleteRows = false;
             dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDatos.Columns.AddRange(new DataGridViewColumn[] { colRadio, colDensidad, colVolumen, colMasa, colTipo, colColor });
+            dgvDatos.Columns.AddRange(new DataGridViewColumn[] { colRadio, colDensidad, colArea, colVolumen, colMasa, colTipo, colColor });
             dgvDatos.Dock = DockStyle.Fill;
             dgvDatos.Location = new Point(0, 0);
             dgvDatos.Name = "dgvDatos";
@@ -246,6 +247,12 @@
             colDensidad.Name = "colDensidad";
             colDensidad.ReadOnly = true;
             // 
+            // colArea
+            // 
+            colArea.HeaderText = "Área";
+            colArea.Name = "colArea";
+            colArea.ReadOnly = true;
+            // 
             // colVolumen
             // 
             colVolumen.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -321,6 +328,7 @@
         private ToolStripComboBox tsCboColores;
         private DataGridViewTextBoxColumn colRadio;
         private DataGridViewTextBoxColumn colDensidad;
+        private DataGridViewTextBoxColumn colArea;
         private DataGridViewTextBoxColumn colVolumen;
         private DataGridViewTextBoxColumn colMasa;
         private DataGridViewTextBoxColumn colTipo;
