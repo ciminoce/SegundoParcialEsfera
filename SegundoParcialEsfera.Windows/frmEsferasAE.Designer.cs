@@ -141,7 +141,7 @@
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(75, 53);
             btnOK.TabIndex = 5;
-            btnOK.Text = "button1";
+            btnOK.Text = "OK";
             btnOK.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
@@ -150,7 +150,7 @@
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 53);
             btnCancelar.TabIndex = 5;
-            btnCancelar.Text = "button1";
+            btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
             // label3
